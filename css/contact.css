@@ -1,0 +1,234 @@
+.contact-heading {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+.contact-heading::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -5px;
+    left: 105px;
+}
+.contact-heading-left {
+    color: var(--primary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact-quote {
+    color: var(--heading-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.contact-description {
+    color: var(--subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.contact-location-title {
+    color: var(--heading-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-location-title i {
+    color: var(--primary-color);
+}
+.contact-location {
+    color: var(--subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.contact-phone-title {
+    color: var(--heading-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-phone-title i {
+    color: var(--primary-color);
+}
+.contact-phone {
+    color: var(--subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.contact-email {
+    color: var(--subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.contact-socials-title {
+    color: var(--heading-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-socials-title i {
+    color: var(--primary-color);
+}
+.contact-social {
+    color: var(--primary-color);
+    font-size: 24px;
+    transition: all ease-in-out 300ms;
+}
+.contact-social:hover {
+    color: var(--subheading-color);
+}
+
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid var(--line-color);
+    margin: 0;
+    padding: 0;
+    height: 125px;
+    width: 5px;
+    text-align: center;
+}
+
+/* FORM */
+.contact-heading-right {
+    color: var(--primary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact-label {
+    color: var(--heading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+.contact-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--body-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em 3.5em;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 300ms;
+}
+.contact-btn:hover {
+    outline: 1px solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+}
+textarea.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 3px 5px var(--form-shadow-color);
+    outline: 0 none;
+}
+
+
+
+@media only screen and (max-device-width: 360px) {
+    /* styles for mobile browsers smaller than 360px; */
+    .contact-heading {
+        font-size: 40px;
+    }
+    .contact-heading-left,
+    .contact-heading-right {
+        font-size: 25px;
+    }
+    .contact-quote {
+        font-size: 30px;
+    }
+    .contact-description {
+        font-size: 16px;
+    }
+    .contact-details {
+        font-size: 16px;
+    }
+
+    .contact-label {
+        color: var(--heading-color);
+        font-size: 16px;
+    }
+    .contact-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+    .contact-heading::after {
+        content: '';
+        height: 3px;
+        width: 50px;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: -5px;
+        left: 80px;
+    }
+ }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; */
+    .contact-heading-left,
+    .contact-heading-right {
+        font-size: 25px;
+    }
+    .contact-quote {
+        font-size: 30px;
+    }
+    .contact-description {
+        font-size: 16px;
+    }
+    .contact-details {
+        font-size: 16px;
+    }
+
+    .contact-label {
+        color: var(--heading-color);
+        font-size: 16px;
+    }
+    .contact-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+ }
+ 
+ @media only screen and (device-width: 768px) {
+    /* default tablet and iPad screens */
+ }
+ 
+ @media only screen and (min-width: 960px) {
+     /* styles for browsers larger than 960px; */
+    .contact-socials-title,
+    .contact-phone-title,
+    .contact-location-title {
+    font-size: 16px;
+    }
+    .contact-details {
+        font-size: 16px;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+     /* styles for browsers larger than 1200px; */
+     .contact-socials-title,
+     .contact-phone-title,
+     .contact-location-title {
+     font-size: 20px;
+     }
+ }

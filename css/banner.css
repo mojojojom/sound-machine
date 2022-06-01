@@ -1,0 +1,96 @@
+
+.banner-wrapper {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.60) 100%, rgba(0 0 0 / 60)100%,rgba(0, 0, 0, .60) 100%), url(/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    max-width: 2560px;
+    max-height: 600px;
+    min-height: 600px;
+}
+.banner-heading-container {
+    margin-top: 15em;
+    height: 100%;
+}
+.banner-heading {
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    z-index: 5;
+    font-family: 'Brygada 1918', serif;
+}
+.banner-subheading {
+    font-size: 18px;
+    color: var(--banner-subheading-color);
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em 3.5em;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 300ms;
+}
+.banner-btn:hover {
+    outline: 1px solid var(--secondary-color);
+    background: none;
+    color: var(--secondary-color);
+}
+
+
+
+@media only screen and (max-device-width: 360px) {
+    /* styles for mobile browsers smaller than 360px; */
+    .banner-heading {
+        font-size: 30px;
+    }
+    .banner-subheading {
+        font-size: 14px;
+    }
+    .banner-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+ }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; */
+    .banner-heading {
+        font-size: 30px;
+    }
+    .banner-subheading {
+        font-size: 14px;
+    }
+    .banner-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+ }
+ 
+ @media only screen and (device-width: 768px) {
+    /* default tablet and iPad screens */
+    .banner-heading {
+        font-size: 50px;
+    }
+    .banner-subheading {
+        font-size: 18px;
+    }
+    .banner-btn {
+        font-size: 16px;
+        padding: 0.5em 3.5em;
+    }
+ }
+ 
+ @media only screen and (min-width: 960px) {
+     /* styles for browsers larger than 960px; */
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+     /* styles for browsers larger than 1200px; */
+ }

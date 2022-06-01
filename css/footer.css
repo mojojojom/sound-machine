@@ -1,0 +1,47 @@
+.footer-wrapper {
+    background-color: var(--heading-color);
+}
+.footer-copyright {
+    color: var(--banner-subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    /* padding: 1em 0; */
+}
+
+.footer-address-title,
+.footer-email-title,
+.footer-phone-title {
+    color: var(--secondary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 22px;
+    /* margin: 0; */
+}
+.footer-address,
+.footer-email,
+.footer-phone {
+    color: var(--banner-subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-device-width: 360px) {
+    /* styles for mobile browsers smaller than 360px; */
+
+ }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; */
+ }
+ 
+ @media only screen and (device-width: 768px) {
+    /* default tablet and iPad screens */
+ }
+ 
+ @media only screen and (min-width: 960px) {
+     /* styles for browsers larger than 960px; */
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+     /* styles for browsers larger than 1200px; */
+ }

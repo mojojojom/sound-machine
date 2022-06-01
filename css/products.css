@@ -1,0 +1,218 @@
+
+
+
+.product-heading{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+.product-heading::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -5px;
+    left: 80px;
+}
+.product-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: var(--heading-color);
+}
+.product-price {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color:  var(--subheading-color);
+}
+.product-details-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color:  var(--heading-color);
+    margin-bottom: 0;
+}
+.product-description {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color:  var(--subheading-color);
+}
+.add-to-cart-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color:  var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.2em 2em;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 300ms;
+}
+.add-to-cart-btn:hover {
+    outline: 1px solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+}
+.product-quantity {
+    width: 4em;
+    color: var(--heading-color);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.product-related-title {
+    color: var(--primary-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 25px;
+}
+.product-view-all-btn {
+    color: var(--heading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+.product-view-all-btn:hover {
+    color: var(--primary-color);
+}
+.related-products-container a {
+    text-decoration: none;
+}
+.related-products-container img {
+    object-fit: cover;
+}
+.related-products-container,
+.related-products-container img,
+.related-products-container p {
+    transition: all ease-in-out 300ms;
+}
+.related-products-container:hover img {
+    opacity: 0.75;
+}
+.related-products-container:hover p{
+    color: var(--primary-color);
+}
+.related-product-name {
+    margin-bottom: 0;
+    color: var(--heading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.related-product-price {
+    color: var(--subheading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+@media only screen and (max-device-width: 360px) {
+    /* styles for mobile browsers smaller than 360px; */
+    .product-heading{
+        font-size: 40px;
+    }
+    .product-name {
+        font-size: 22px;
+    }
+    .product-price {
+        font-size: 20px;
+    }
+    .product-details-title {
+        font-size: 16px;
+    }
+    .product-description {
+        font-size: 16px;
+    }
+    .add-to-cart-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+    .product-related {
+        margin-bottom: 16px;
+    }
+    .product-related-title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .product-view-all-btn {
+        font-size: 14px;
+    }
+    .related-product-name {
+        font-size: 16px;
+    }
+    .related-product-price {
+        font-size: 12px;
+    }
+
+    .product-heading::after {
+        content: '';
+        height: 3px;
+        width: 50px;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: -5px;
+        left: 60px;
+    }
+ }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; */
+    .product-name {
+        font-size: 22px;
+    }
+    .product-price {
+        font-size: 20px;
+    }
+    .product-details-title {
+        font-size: 16px;
+    }
+    .product-description {
+        font-size: 16px;
+    }
+    .add-to-cart-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+    .product-related {
+        margin-bottom: 16px;
+    }
+    .product-related-title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .product-view-all-btn {
+        font-size: 14px;
+    }
+    .related-product-name {
+        font-size: 16px;
+    }
+    .related-product-price {
+        font-size: 12px;
+    }
+ }
+ 
+ @media only screen and (device-width: 768px) {
+    /* default tablet and iPad screens */
+ }
+ 
+ @media only screen and (min-width: 960px) {
+     /* styles for browsers larger than 960px; */
+     .related-product-name {
+        font-size: 16px;
+    }
+    .related-product-price {
+        font-size: 12px;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+     /* styles for browsers larger than 1200px; */
+ }

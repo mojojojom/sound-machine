@@ -1,0 +1,107 @@
+.about-wrapper {
+    /* background-color: #2C2A26; */
+    background-color: var(--primary-color);
+}
+.about-heading {
+    color: var(--heading-color);
+    font-family: 'Brygada 1918', serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+.about-heading::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    background-color: var(--heading-color);
+    position: absolute;
+    bottom: -5px;
+    left: 80px;
+}
+.about-quote {
+    font-family: 'Brygada 1918', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--heading-color);
+    line-height: 45px;
+}
+.about-quote-mark {
+    color: var(--heading-color);
+    font-size: 50px;
+}
+.about-btn {
+    background-color: #deb76800;
+    border: none;
+    outline: 1px solid var(--heading-color);
+    color: var(--heading-color);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em 3.5em;
+    z-index: 5;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 300ms;
+}
+.about-btn:hover {
+    outline: 1px solid var(--heading-color);
+    background: var(--heading-color);
+    color: var(--secondary-color);
+}
+.about-description {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color: var(--heading-color);
+}
+
+
+@media only screen and (max-device-width: 360px) {
+    /* styles for mobile browsers smaller than 360px; */
+    .about-heading{
+        font-size: 40px;
+    }
+    .about-quote {
+        font-size: 25px;
+    }
+    .about-description {
+        font-size: 16px;
+    }
+    .about-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+    .about-heading::after {
+        content: '';
+        height: 3px;
+        width: 50px;
+        background-color: var(--heading-color);
+        position: absolute;
+        bottom: -5px;
+        left: 60px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; */
+    .about-quote {
+        font-size: 25px;
+    }
+    .about-description {
+        font-size: 16px;
+    }
+    .about-btn {
+        font-size: 16px;
+        padding: 0.5em 2em;
+    }
+ }
+ 
+ @media only screen and (device-width: 768px) {
+    /* default tablet and iPad screens */
+ }
+ 
+ @media only screen and (min-width: 960px) {
+     /* styles for browsers larger than 960px; */
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+     /* styles for browsers larger than 1200px; */
+ }
