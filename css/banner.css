@@ -28,7 +28,7 @@
 }
 .banner-btn {
     background-color: var(--primary-color);
-    border: none;
+    border: 1px solid var(--primary-color);
     color: var(--secondary-color);
     font-size: 22px;
     font-weight: bold;
@@ -38,7 +38,7 @@
     transition: all ease-in-out 300ms;
 }
 .banner-btn:hover {
-    outline: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     background: none;
     color: var(--secondary-color);
 }

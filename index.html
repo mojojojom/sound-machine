@@ -17,7 +17,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> 
-
+        <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 
         <!-- Fontawesome -->
@@ -33,8 +33,7 @@
         <script src="script/script.js"></script>
     </head>
     <body>
-                <!-- HEADER -->
-        <!-- Navigation --> 
+        <!-- HEADER -->
         <div class="navbar navbar-expand-lg navbar-light fixed-top" id="header-navbar">
             
             <!-- DESKTOP NAV -->
@@ -108,7 +107,8 @@
         
                 <div class="row h-100 pb-0 pb-sm-0 pb-md-0 pb-lg-5">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                        <img class="img-fluid w-100 product-image" src="/images/p-1.jpg" alt="">
+                        <img src="/images/p-1.jpg" alt="" class="w-100 product-img" height="500">
+                        <!-- <img class="img-fluid w-100 product-image" src="/images/p-1.jpg" alt=""> -->
                     </div>
         
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -131,43 +131,43 @@
         
                 <div class="row">
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="1">
-                            <img class="img-thumbnail" src="/images/r-1.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-1.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
                     </div>
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="2">
-                            <img class="img-thumbnail" src="/images/r-2.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-2.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
                     </div>
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="3">
-                            <img class="img-thumbnail" src="/images/r-3.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-3.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
                     </div>
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="4">
-                            <img class="img-thumbnail" src="/images/r-4.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-4.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
                     </div>
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="5">
-                            <img class="img-thumbnail" src="/images/r-5.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-5.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
                     </div>
                     <div class="mb-4 col-6 col-sm-6 col-md-4 col-lg-2 related-products-container">
-                        <a href="6">
-                            <img class="img-thumbnail" src="/images/r-6.jpg" alt="">
+                        <a href="#">
+                            <img class="w-100" src="/images/r-6.jpg" alt="" height="150">
                             <p class="related-product-name">Product Name</p>
                             <p class="related-product-price">$500</p>
                         </a>
@@ -248,21 +248,21 @@
         
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <p class="text-center text-sm-center text-md-center text-lg-start contact-heading-right">SEND US A MESSAGE</p>
-                        <form action="">
+                        <form name="contact" method="POST" data-netlify="true">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label contact-label">Name<span class="contact-required text-danger">*</span></label>
-                                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="John Doe" required>
+                                <input name="name" type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="John Doe" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label contact-label">Email address<span class="contact-required text-danger">*</span></label>
-                                <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                                <input name="email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label contact-label">Message<span class="contact-required text-danger">*</span></label>
-                                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Type your message here" required></textarea>
+                                <textarea name="message" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" placeholder="Type your message here" required></textarea>
                             </div>
                             <div class="text-center text-sm-center text-md-center text-lg-start contact-btn-container">
-                                <button class="justify-content-center contact-btn">SEND MESSAGE</button>
+                                <button type="submit" class="justify-content-center contact-btn">SEND MESSAGE</button>
                             </div>
         
                         </form>
@@ -298,4 +298,23 @@
             </div>
         </div>
     </body>
+    <script>
+        document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            let myForm = document.getElementById("pizzaOrder");
+            let formData = new FormData(myForm);
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+                .then(() => console.log("Form successfully submitted"))
+                .catch((error) => alert(error));
+        };
+
+    </script>
 </html>
